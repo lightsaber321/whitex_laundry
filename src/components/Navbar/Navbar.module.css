@@ -1,0 +1,43 @@
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1.2rem 4rem;
+  background: rgba(245,239,228,.92);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--tan);
+}
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem; font-weight: 700;
+  letter-spacing: .12em; text-transform: uppercase;
+  color: var(--brown);
+}
+.links { display: flex; gap: 2.5rem; list-style: none; }
+.links a {
+  font-family: 'DM Mono', monospace;
+  font-size: .7rem; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--faded); text-decoration: none;
+  transition: color .25s;
+}
+.links a:hover { color: var(--brown); }
+
+.callBtn {
+  display: flex; align-items: center; gap: 0.5rem;
+  color: var(--brown);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.8rem; letter-spacing: 0.1em;
+  text-decoration: none;
+  transition: color .25s;
+}
+.callBtn:hover { color: var(--dark); }
+.callText { display: none; } 
+
+@media (min-width: 769px) {
+  .callText { display: inline; }
+}
+
+@media (max-width: 768px) {
+  .nav { padding: 1rem 1.5rem; }
+  .links { display: none; }
+  .logo { font-size: 1.1rem; }
+}
