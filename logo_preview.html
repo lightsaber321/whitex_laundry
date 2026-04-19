@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AST Logo Preview</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+            --accent: #38bdf8;
+        }
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p {
+            opacity: 0.7;
+            font-size: 1.1rem;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .logo-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        .logo-card:hover {
+            transform: translateY(-5px);
+        }
+        .image-container {
+            width: 100%;
+            aspect-ratio: 1;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .info {
+            padding: 20px;
+        }
+        .info h3 {
+            margin: 0 0 10px;
+            font-size: 1.25rem;
+        }
+        .info p {
+            margin: 0;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            background: var(--accent);
+            color: var(--bg);
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AST Branding Identity</h1>
+        <p>Three unique logo concepts designed for your review.</p>
+    </header>
+
+    <div class="gallery">
+        <div class="logo-card">
+            <div class="image-container">
+                <img src="file:///C:/Users/BUNTY/.gemini/antigravity/brain/7efa92b4-028c-4ea2-8337-6b62ea78ca18/ast_logo_modern_1776102410773.png" alt="Modern Minimalist">
+            </div>
+            <div class="info">
+                <span class="badge">CONCEPT 1</span>
+                <h3>Modern Minimalist</h3>
+                <p>A sleek, geometric approach using navy and silver. Focuses on professional clarity and scalability.</p>
+            </div>
+        </div>
+
+        <div class="logo-card">
+            <div class="image-container">
+                <img src="file:///C:/Users/BUNTY/.gemini/antigravity/brain/7efa92b4-028c-4ea2-8337-6b62ea78ca18/ast_logo_luxury_1776102431903.png" alt="Luxury & Heritage">
+            </div>
+            <div class="info">
+                <span class="badge" style="background: #fbbf24;">CONCEPT 2</span>
+                <h3>Luxury & Heritage</h3>
+                <p>Gold accents on matte black. Evokes a sense of legacy, trust, and premium quality.</p>
+            </div>
+        </div>
+
+        <div class="logo-card">
+            <div class="image-container">
+                <img src="file:///C:/Users/BUNTY/.gemini/antigravity/brain/7efa92b4-028c-4ea2-8337-6b62ea78ca18/ast_logo_dynamic_1776102450574.png" alt="Dynamic & Tech">
+            </div>
+            <div class="info">
+                <span class="badge" style="background: #f43f5e;">CONCEPT 3</span>
+                <h3>Dynamic & Tech</h3>
+                <p>Energetic and vibrant. Uses motion-inspired lines and bold colors for a modern tech feel.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
